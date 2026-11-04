@@ -20,6 +20,8 @@
         <li><a href="#menu">Меню</a></li>
         <li><a href="#gallery">Галерея</a></li>
         <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#feedback">Обратная связь</a></li>
+        <li><a href="login.html">Вход</a></li>
       </ul>
     </nav>
   </div>
@@ -110,6 +112,48 @@
       <img src="images/gallery2.png" alt="Кофейные зёрна">
       <img src="images/gallery3.png" alt="Свежий круассан">
     </div>
+  </div>
+</section>
+<section class="section section--gray" id="feedback">
+  <div class="container">
+    <h2 class="section__title">Обратная связь</h2>
+    <form class="feedback-form" action="https://httpbin.org/post" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fio">ФИО</label>
+        <input type="text" id="fio" name="fullname" placeholder="Иванов Иван Иванович" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+      <fieldset class="form-group">
+        <legend>Откуда вы узнали о нас?</legend>
+        <label class="radio"><input type="radio" name="source" value="friends" required> Друзья</label>
+        <label class="radio"><input type="radio" name="source" value="social"> Соцсети</label>
+        <label class="radio"><input type="radio" name="source" value="walk"> Проходил мимо</label>
+      </fieldset>
+      <div class="form-group">
+        <label for="type">Тип обращения</label>
+        <select id="type" name="type" required>
+          <option value="">— выберите —</option>
+          <option value="complaint">Жалоба</option>
+          <option value="suggestion">Предложение</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос или предложение" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="file">Вложение (необязательно)</label>
+        <input type="file" id="file" name="attachment">
+      </div>
+      <label class="checkbox">
+        <input type="checkbox" name="consent" value="yes" required>
+        Даю согласие на обработку персональных данных
+      </label>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
   </div>
 </section>
 <footer class="footer" id="contacts">

@@ -277,3 +277,79 @@ img {
   font-size: 0.85rem;
   color: #b9a892;
 }
+
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 34px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(74, 44, 26, 0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+  border: none;
+  padding: 0;
+}
+
+.form-group label,
+.form-group legend {
+  display: block;
+  font-weight: 500;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: var(--brown-dark);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d8cbbd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--cream);
+  color: var(--text);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--brown);
+  background-color: #fff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 16px;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 18px;
+  font-size: 0.9rem;
+}
+
+.feedback-form .btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
